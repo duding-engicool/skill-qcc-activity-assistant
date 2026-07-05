@@ -1,0 +1,362 @@
+# QCC发表PPT大纲 - 完整版
+
+metadata:
+  template: 完整版
+  chapters: 14
+  description: 标准14章节完整大纲骨架
+
+pages:
+  # 第1章: 封面
+  - page_no: 1
+    title: "{{project_name}}"
+    layout: cover
+    blocks:
+      - type: paragraph
+        font_size: 24
+        content: "{{project_name}}"
+      - type: paragraph
+        font_size: 16
+        content: "圈名: {{circle_name}}"
+      - type: paragraph
+        font_size: 14
+        content: "发表人: {{presenter}}"
+    images: []
+    speaker_notes_outline: "介绍课题名称和圈名"
+    est_seconds: 30
+
+  # 第2章: 圈情介绍
+  - page_no: 2
+    title: "圈情介绍"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第2章 圈情介绍"
+    images: []
+    speaker_notes_outline: "进入圈情介绍章节"
+    est_seconds: 15
+
+  - page_no: 3
+    title: "圈情介绍 · 团队"
+    layout: text_left_image_right
+    blocks:
+      - type: bullet
+        font_size: 16
+        items:
+          - "圈名: {{circle_name}}"
+          - "圈名由来: {{circle_name_origin}}"
+          - "成员人数: {{member_count}}人"
+          - "活动周期: {{activity_period}}"
+    images:
+      - path: "02_Step2_活动计划/圈徽.png"
+        position: right
+        width_cm: 12
+    speaker_notes_outline: "介绍圈名由来和团队成员"
+    est_seconds: 60
+
+  # 第3章: 主题选定
+  - page_no: 4
+    title: "主题选定"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第3章 主题选定"
+    images: []
+    speaker_notes_outline: "进入主题选定章节"
+    est_seconds: 15
+
+  - page_no: 5
+    title: "主题选定 · 选题理由"
+    layout: text_single
+    blocks:
+      - type: bullet
+        font_size: 16
+        items:
+          - "选题背景: {{topic_background}}"
+          - "选题理由: {{topic_reason}}"
+          - "选定主题: {{project_name}}"
+    images: []
+    speaker_notes_outline: "说明选题理由和背景"
+    est_seconds: 90
+
+  # 第4章: 活动计划
+  - page_no: 6
+    title: "活动计划"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第4章 活动计划"
+    images: []
+    speaker_notes_outline: "进入活动计划章节"
+    est_seconds: 15
+
+  - page_no: 7
+    title: "活动计划 · 甘特图"
+    layout: text_left_image_right
+    blocks:
+      - type: bullet
+        font_size: 16
+        items:
+          - "活动周期: {{activity_period}}"
+          - "活动步骤: 10步"
+    images:
+      - path: "02_Step2_活动计划/甘特图.png"
+        position: right
+        width_cm: 14
+    speaker_notes_outline: "展示活动计划甘特图"
+    est_seconds: 60
+
+  # 第5章: 现状把握
+  - page_no: 8
+    title: "现状把握"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第5章 现状把握"
+    images: []
+    speaker_notes_outline: "进入现状把握章节"
+    est_seconds: 15
+
+  - page_no: 9
+    title: "现状把握 · 数据分析"
+    layout: text_left_image_right
+    blocks:
+      - type: bullet
+        font_size: 16
+        items:
+          - "现状值: {{baseline_value}}"
+          - "数据收集周期: {{data_period}}"
+          - "样本量: N={{sample_size}}"
+    images:
+      - path: "03_Step3_现状把握/柏拉图.png"
+        position: right
+        width_cm: 14
+    speaker_notes_outline: "说明现状数据收集方法和主要发现"
+    est_seconds: 120
+
+  # 第6章: 目标设定
+  - page_no: 10
+    title: "目标设定"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第6章 目标设定"
+    images: []
+    speaker_notes_outline: "进入目标设定章节"
+    est_seconds: 15
+
+  - page_no: 11
+    title: "目标设定 · 目标值"
+    layout: text_single
+    blocks:
+      - type: bullet
+        font_size: 16
+        items:
+          - "现状值: {{baseline_value}}"
+          - "目标值: {{target_value}}"
+          - "目标设定依据: SMART原则"
+          - "改善幅度: {{improvement_rate}}"
+    images: []
+    speaker_notes_outline: "说明目标值设定依据"
+    est_seconds: 90
+
+  # 第7章: 原因分析
+  - page_no: 12
+    title: "原因分析"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第7章 原因分析"
+    images: []
+    speaker_notes_outline: "进入原因分析章节"
+    est_seconds: 15
+
+  - page_no: 13
+    title: "原因分析 · 鱼骨图"
+    layout: image_full
+    blocks: []
+    images:
+      - path: "05_Step5_原因分析/鱼骨图.png"
+        position: center
+        width_cm: 28
+    speaker_notes_outline: "展示鱼骨图，说明原因分析结果"
+    est_seconds: 90
+
+  # 第8章: 要因验证
+  - page_no: 14
+    title: "要因验证"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第8章 要因验证"
+    images: []
+    speaker_notes_outline: "进入要因验证章节"
+    est_seconds: 15
+
+  - page_no: 15
+    title: "要因验证 · 确认结果"
+    layout: table_full
+    blocks:
+      - type: table
+        headers: ["要因", "验证方法", "验证结果", "结论"]
+        rows:
+          - ["要因1", "数据验证", "数据支持", "是要因"]
+          - ["要因2", "现场调查", "数据支持", "是要因"]
+          - ["要因3", "实验验证", "数据不支持", "非要因"]
+    images: []
+    speaker_notes_outline: "说明要因验证过程和结果"
+    est_seconds: 120
+
+  # 第9章: 对策拟定
+  - page_no: 16
+    title: "对策拟定"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第9章 对策拟定"
+    images: []
+    speaker_notes_outline: "进入对策拟定章节"
+    est_seconds: 15
+
+  - page_no: 17
+    title: "对策拟定 · 5W1H"
+    layout: table_full
+    blocks:
+      - type: table
+        headers: ["对策", "负责人", "完成时间", "预期效果"]
+        rows:
+          - ["对策1", "{{owner1}}", "{{deadline1}}", "{{effect1}}"]
+          - ["对策2", "{{owner2}}", "{{deadline2}}", "{{effect2}}"]
+    images: []
+    speaker_notes_outline: "说明对策方案和5W1H分析"
+    est_seconds: 90
+
+  # 第10章: 对策实施
+  - page_no: 18
+    title: "对策实施"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第10章 对策实施"
+    images: []
+    speaker_notes_outline: "进入对策实施章节"
+    est_seconds: 15
+
+  - page_no: 19
+    title: "对策实施 · 过程记录"
+    layout: text_left_image_right
+    blocks:
+      - type: bullet
+        font_size: 16
+        items:
+          - "对策1: 已实施完成"
+          - "对策2: 已实施完成"
+          - "实施周期: {{implementation_period}}"
+    images:
+      - path: "08_Step8_对策实施/实施照片.png"
+        position: right
+        width_cm: 12
+    speaker_notes_outline: "展示对策实施过程和照片"
+    est_seconds: 90
+
+  # 第11章: 效果确认
+  - page_no: 20
+    title: "效果确认"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第11章 效果确认"
+    images: []
+    speaker_notes_outline: "进入效果确认章节"
+    est_seconds: 15
+
+  - page_no: 21
+    title: "效果确认 · 目标达成"
+    layout: text_left_image_right
+    blocks:
+      - type: bullet
+        font_size: 16
+        items:
+          - "改善前: {{baseline_value}}"
+          - "改善后: {{actual_value}}"
+          - "目标值: {{target_value}}"
+          - "目标达成率: {{achievement_rate}}"
+    images:
+      - path: "09_Step9_效果确认/效果对比图.png"
+        position: right
+        width_cm: 14
+    speaker_notes_outline: "对比改善前后数据，说明目标达成情况"
+    est_seconds: 120
+
+  # 第12章: 标准化
+  - page_no: 22
+    title: "标准化"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第12章 标准化"
+    images: []
+    speaker_notes_outline: "进入标准化章节"
+    est_seconds: 15
+
+  - page_no: 23
+    title: "标准化 · 文件更新"
+    layout: text_single
+    blocks:
+      - type: bullet
+        font_size: 16
+        items:
+          - "更新文件: {{standardized_docs}}"
+          - "培训完成: 是"
+          - "水平展开: {{horizontal_deployment}}"
+    images: []
+    speaker_notes_outline: "说明标准化文件和培训情况"
+    est_seconds: 60
+
+  # 第13章: 检讨与改进
+  - page_no: 24
+    title: "检讨与改进"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第13章 检讨与改进"
+    images: []
+    speaker_notes_outline: "进入检讨与改进章节"
+    est_seconds: 15
+
+  - page_no: 25
+    title: "检讨与改进 · 活动总结"
+    layout: text_single
+    blocks:
+      - type: bullet
+        font_size: 16
+        items:
+          - "活动成果: {{achievements}}"
+          - "遗留问题: {{remaining_issues}}"
+          - "未来计划: {{future_plan}}"
+    images: []
+    speaker_notes_outline: "总结活动成果和未来计划"
+    est_seconds: 90
+
+  # 第14章: 致谢
+  - page_no: 26
+    title: "致谢"
+    layout: acknowledgement
+    blocks:
+      - type: paragraph
+        font_size: 18
+        content: "感谢各位评委的聆听与指导！"
+    images: []
+    speaker_notes_outline: "致谢结束"
+    est_seconds: 15

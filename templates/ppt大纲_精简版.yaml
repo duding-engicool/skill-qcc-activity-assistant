@@ -1,0 +1,200 @@
+# QCC发表PPT大纲 - 精简版
+
+metadata:
+  template: 精简版
+  chapters: 8
+  description: 8章节合并版大纲骨架(小型课题用)
+
+pages:
+  # 第1章: 封面
+  - page_no: 1
+    title: "{{project_name}}"
+    layout: cover
+    blocks:
+      - type: paragraph
+        font_size: 24
+        content: "{{project_name}}"
+      - type: paragraph
+        font_size: 16
+        content: "圈名: {{circle_name}}"
+    images: []
+    speaker_notes_outline: "介绍课题名称和圈名"
+    est_seconds: 30
+
+  # 第2章: 圈情与计划(合并原2+4)
+  - page_no: 2
+    title: "圈情与计划"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第2章 圈情与计划"
+    images: []
+    speaker_notes_outline: "进入圈情与计划章节"
+    est_seconds: 15
+
+  - page_no: 3
+    title: "圈情与计划 · 团队与进度"
+    layout: text_left_image_right
+    blocks:
+      - type: bullet
+        font_size: 16
+        items:
+          - "圈名: {{circle_name}}"
+          - "成员: {{member_count}}人"
+          - "活动周期: {{activity_period}}"
+    images:
+      - path: "02_Step2_活动计划/甘特图.png"
+        position: right
+        width_cm: 12
+    speaker_notes_outline: "介绍团队和活动计划"
+    est_seconds: 60
+
+  # 第3章: 主题选定与现状(合并原3+5)
+  - page_no: 4
+    title: "主题选定与现状"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第3章 主题选定与现状"
+    images: []
+    speaker_notes_outline: "进入主题选定与现状章节"
+    est_seconds: 15
+
+  - page_no: 5
+    title: "主题选定与现状 · 分析"
+    layout: text_left_image_right
+    blocks:
+      - type: bullet
+        font_size: 16
+        items:
+          - "选题理由: {{topic_reason}}"
+          - "现状值: {{baseline_value}}"
+          - "主要问题: {{main_problem}}"
+    images:
+      - path: "03_Step3_现状把握/柏拉图.png"
+        position: right
+        width_cm: 14
+    speaker_notes_outline: "说明选题理由和现状分析"
+    est_seconds: 120
+
+  # 第4章: 目标与原因(合并原6+7)
+  - page_no: 6
+    title: "目标与原因"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第4章 目标与原因"
+    images: []
+    speaker_notes_outline: "进入目标与原因章节"
+    est_seconds: 15
+
+  - page_no: 7
+    title: "目标与原因 · 分析"
+    layout: text_left_image_right
+    blocks:
+      - type: bullet
+        font_size: 16
+        items:
+          - "目标值: {{target_value}}"
+          - "主要原因: {{main_causes}}"
+    images:
+      - path: "05_Step5_原因分析/鱼骨图.png"
+        position: right
+        width_cm: 12
+    speaker_notes_outline: "说明目标设定和原因分析"
+    est_seconds: 90
+
+  # 第5章: 要因验证与对策(合并原8+9)
+  - page_no: 8
+    title: "要因验证与对策"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第5章 要因验证与对策"
+    images: []
+    speaker_notes_outline: "进入要因验证与对策章节"
+    est_seconds: 15
+
+  - page_no: 9
+    title: "要因验证与对策 · 方案"
+    layout: table_full
+    blocks:
+      - type: table
+        headers: ["要因", "对策", "负责人", "完成时间"]
+        rows:
+          - ["要因1", "对策1", "{{owner1}}", "{{deadline1}}"]
+          - ["要因2", "对策2", "{{owner2}}", "{{deadline2}}"]
+    images: []
+    speaker_notes_outline: "说明要因验证和对策方案"
+    est_seconds: 90
+
+  # 第6章: 实施与效果(合并原10+11)
+  - page_no: 10
+    title: "实施与效果"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第6章 实施与效果"
+    images: []
+    speaker_notes_outline: "进入实施与效果章节"
+    est_seconds: 15
+
+  - page_no: 11
+    title: "实施与效果 · 成果"
+    layout: text_left_image_right
+    blocks:
+      - type: bullet
+        font_size: 16
+        items:
+          - "改善前: {{baseline_value}}"
+          - "改善后: {{actual_value}}"
+          - "目标达成率: {{achievement_rate}}"
+    images:
+      - path: "09_Step9_效果确认/效果对比图.png"
+        position: right
+        width_cm: 14
+    speaker_notes_outline: "展示实施效果和目标达成情况"
+    est_seconds: 120
+
+  # 第7章: 标准化与检讨(合并原12+13)
+  - page_no: 12
+    title: "标准化与检讨"
+    layout: section_break
+    blocks:
+      - type: paragraph
+        font_size: 20
+        content: "第7章 标准化与检讨"
+    images: []
+    speaker_notes_outline: "进入标准化与检讨章节"
+    est_seconds: 15
+
+  - page_no: 13
+    title: "标准化与检讨 · 总结"
+    layout: text_single
+    blocks:
+      - type: bullet
+        font_size: 16
+        items:
+          - "标准化: {{standardized_docs}}"
+          - "遗留问题: {{remaining_issues}}"
+          - "未来计划: {{future_plan}}"
+    images: []
+    speaker_notes_outline: "总结标准化和活动检讨"
+    est_seconds: 60
+
+  # 第8章: 致谢
+  - page_no: 14
+    title: "致谢"
+    layout: acknowledgement
+    blocks:
+      - type: paragraph
+        font_size: 18
+        content: "感谢各位评委的聆听与指导！"
+    images: []
+    speaker_notes_outline: "致谢结束"
+    est_seconds: 15
